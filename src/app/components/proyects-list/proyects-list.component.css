@@ -1,0 +1,187 @@
+.card-body>a>img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    position: absolute;
+    left: 8px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.card-body>a>img:nth-child(2) {
+    opacity: 0;
+}
+
+.card-body>a:hover>img:nth-child(1) {
+    opacity: 0;
+}
+
+.card-body>a:hover>img:nth-child(2) {
+    opacity: 1;
+}
+
+
+
+
+
+.card-body>a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1rem;
+    padding: 8px 15px 8px 40px;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(218, 165, 32, 0.3);
+    transition: var(--transition);
+    position: relative;
+}
+
+.card-body>a:hover {
+    color: var(--card-bg);
+    background-color: var(--primary-color);
+}
+
+
+
+/*Cards proyectos*/
+.tecnologiasProyecto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 1em;
+}
+
+.tecnologiasProyecto>div {
+    padding: 5px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    background-color: var(--dark-bg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+.card.h-100 {
+    width: 35em;
+    background-color: #302f2f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: var(--transition);
+    margin: 1em auto;
+    border-radius: 10px;
+
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: var(--secondary-text);
+    margin-bottom: 0.5em;
+    height: 6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn {
+    margin-bottom: 2em;
+    margin-left: 45%;
+    margin-top: 2em;
+    background-color: var(--primary-color);
+    border: none;
+    box-shadow: 0 4px 8px rgba(218, 165, 32, 0.5);
+    transition: var(--transition);
+    cursor: pointer;
+    height: 2em;
+    width: 10em;
+    font-size: 1.6em;
+}
+
+/* Media queries para responsividad */
+
+@media (max-width: 768px) {
+  .card.h-100 {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+    height: 5em;
+  }
+
+  .card-body>a {
+    font-size: 0.9rem;
+    padding: 6px 12px 6px 35px;
+  }
+
+  .card-body>a>img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .tecnologiasProyecto>div {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+  }
+
+  .btn {
+    margin-left: 40%;
+    height: 1.75em;
+    width: 8em;
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 480px) {
+  .card.h-100 {
+    width: 100%;
+    margin: 0.5em auto;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.85rem;
+    height: 4em;
+  }
+
+  .card-body>a {
+    font-size: 0.85rem;
+    padding: 5px 10px 5px 30px;
+  }
+
+  .card-body>a>img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .tecnologiasProyecto {
+    gap: 8px;
+  }
+
+  .tecnologiasProyecto>div {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+  }
+
+  .btn {
+    margin-left: 30%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    height: 1.5em;
+    width: 6em;
+    font-size: 1.2em;
+  }
+}

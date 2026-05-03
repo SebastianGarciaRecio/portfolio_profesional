@@ -1,0 +1,154 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f5f5;
+    
+}
+
+/* CONTENEDOR */
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* LÍNEA VERTICAL */
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #e0e0e0;
+}
+
+/* ITEM */
+
+.timeline-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding-left: 60px;
+}
+
+/* PUNTO */
+
+.timeline-marker {
+    position: absolute;
+    left: 14px;
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    background: #f2b705;
+    border-radius: 50%;
+}
+
+/* LADO IZQUIERDO */
+
+.timeline-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-role {
+    color: #f2b705;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.timeline-company {
+    margin: 4px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #d8d7d7;
+}
+
+.timeline-date {
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+/* LADO DERECHO */
+
+.timeline-right {
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.timeline-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: #f2b705;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.timeline-link:hover {
+    transform: translateX(4px);
+}
+
+/* Media queries para responsividad */
+
+@media (max-width: 768px) {
+  .timeline {
+    max-width: 100%;
+    margin: 0 1em;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-left: 40px;
+  }
+
+  .timeline-role {
+    font-size: 20px;
+  }
+
+  .timeline-company {
+    font-size: 18px;
+  }
+
+  .timeline-date {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-item {
+    padding-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  .timeline-marker {
+    left: 9px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .timeline::before {
+    left: 14px;
+  }
+
+  .timeline-role {
+    font-size: 18px;
+  }
+
+  .timeline-company {
+    font-size: 16px;
+  }
+
+  .timeline-date {
+    font-size: 12px;
+  }
+
+  .timeline-right {
+    font-size: 0.9rem;
+  }
+}
+

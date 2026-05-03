@@ -1,0 +1,49 @@
+:root {
+  --primary-color: #daa520;
+  --dark-bg: #302f2f;
+  --card-bg: #383838;
+  --text-color: #ffffff;
+  --secondary-text: #b3b3b3;
+  --border-color: #b3b3b3;
+  --transition: all 0.3s ease;
+}
+
+.dark-theme {
+  --primary-color: #daa520;
+  --dark-bg: #121212;
+  --card-bg: #1e1e1e;
+  --text-color: #ffffff;
+  --secondary-text: #b3b3b3;
+  --border-color: #b3b3b3;
+  --transition: all 0.3s ease;
+  background: var(--dark-bg);
+  color: var(--text-color);
+  min-height: 100vh;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .dark-theme {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dark-theme {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--dark-bg);
+  color: var(--text-color);
+  min-height: 100%;
+}
+
+/* You can add global styles to this file, and also import other style files */

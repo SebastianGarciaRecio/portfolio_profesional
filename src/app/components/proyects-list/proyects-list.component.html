@@ -1,0 +1,27 @@
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @for(proyecto of proyectos.slice(0, proyectosVisibles); track 3){
+    <div class="col">
+        <div class="card h-100">
+            <img [src]="proyecto.img" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ proyecto.title }}</h5>
+                <p class="card-text">{{ proyecto.description }}</p>
+                <a [href]="proyecto.view" target="_blank"><img src="enlace.png" alt="View"> <img src="enlace_black.png" alt="View">View</a>
+                <a [href]="proyecto.github" target="_blank"><img src="github.png" alt="Github"> <img src="github_black.png" alt="Github">Github</a>
+                <div class="tecnologiasProyecto">
+                    @for(tecnologia of proyecto.tecnologies; track $index){
+                    <div><img [src]="tecnologia.img">{{ tecnologia.nombre }}</div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+</div>
+
+@if(proyectosVisibles < proyectos.length){
+    <button type="button" class="btn btn-primary" (click)="verMasProyectos()">ver más</button>
+}@else {
+    <button type="button" class="btn btn-secondary" (click)="reiniciarProyectos()">ver menos</button>
+}

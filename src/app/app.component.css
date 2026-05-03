@@ -1,0 +1,331 @@
+/* Sección de presentation */
+#presentation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  background-color: var(--card-bg);
+  padding: 2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin-top: 130px;
+  margin-bottom: 40px;
+  height: 25em;
+  width: 110em;
+  max-width: none;
+  border-radius: 25px;
+}
+
+#presentation > div {
+  margin-left: 2em;
+  text-align: left;
+}
+
+#presentation > img {
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  margin-bottom: 1.5em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 5px 20px rgba(218, 165, 32, 0.5);
+  object-fit: cover;
+}
+
+#presentation > div > h1 {
+  font-size: 3.5rem;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+#presentation > div > p {
+  font-size: 1.4rem;
+  color: var(--secondary-text);
+  margin-bottom: 2em;
+  width: 60em;
+  text-align: left;
+}
+
+#redes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#redes > a {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  border: 1px solid var(--primary-color);
+  padding: 8px 15px 8px 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(218, 165, 32, 0.5);
+  transition: var(--transition);
+  position: relative;
+}
+
+#redes > a:hover {
+  color: var(--card-bg);
+  background-color: var(--primary-color);
+}
+
+#redes > a > img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  position: absolute;
+  left: 8px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+#redes > a > img.black_icon {
+  opacity: 0;
+}
+
+#redes > a:hover > img {
+  opacity: 0;
+}
+
+#redes > a:hover > img.black_icon {
+  opacity: 1;
+}
+
+/* Sección sobre mí */
+#sobre-mi {
+  padding: 2em;
+  margin-top: 2em;
+  border-radius: 10px;
+}
+
+#sobre-mi > h1 {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-bottom: 1.5em;
+}
+
+#sobre-mi > div {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  width: 100%;
+  border-radius: 10px;
+  padding: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#sobre-mi > div > img {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  margin: 0 auto 1.5em;
+  border: 5px solid var(--primary-color);
+  box-shadow: 0 4px 8px rgba(218, 165, 32, 0.5);
+  object-fit: cover;
+}
+
+#texto > p {
+  font-size: 1rem;
+  color: #e9e9e9;
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+/* Iconos en títulos */
+h1 > img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background-color: var(--text-color);
+  border-radius: 25%;
+  padding: 5px;
+}
+
+/**
+* Estilos para el botón
+*/
+.btn {
+  margin-bottom: 2em;
+  margin-left: 45%;
+  margin-top: 2em;
+  background-color: var(--primary-color);
+  border: none;
+  box-shadow: 0 4px 8px rgba(218, 165, 32, 0.5);
+  transition: var(--transition);
+  cursor: pointer;
+  height: 2em;
+  width: 10em;
+  font-size: 1.6em;
+}
+
+/* Secciónes dentro del portfolio */
+.title-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.title-section > h2 {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-left: 10px;
+}
+
+/* Media queries para responsividad */
+
+@media (max-width: 768px) {
+  #presentation {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    padding: 1.5em;
+    margin-top: 100px;
+  }
+
+  #presentation > div {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #presentation > img {
+    width: 15em;
+    height: 15em;
+  }
+
+  #presentation > div > h1 {
+    font-size: 2.5rem;
+  }
+
+  #presentation > div > p {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  #redes > a {
+    font-size: 1.2rem;
+    padding: 6px 12px 6px 35px;
+  }
+
+  #redes > a > img {
+    width: 20px;
+    height: 20px;
+  }
+
+  #sobre-mi {
+    padding: 1.5em;
+  }
+
+  #sobre-mi > h1 {
+    font-size: 1.75rem;
+  }
+
+  #sobre-mi > div {
+    padding: 1.5em;
+  }
+
+  #sobre-mi > div > img {
+    max-width: 250px;
+    height: 250px;
+  }
+
+  #texto > p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    margin-left: 40%;
+    height: 1.75em;
+    width: 8em;
+    font-size: 1.4em;
+  }
+
+  h1 > img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .title-section > h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #presentation {
+    padding: 1em;
+    margin-top: 80px;
+  }
+
+  #presentation > img {
+    width: 12em;
+    height: 12em;
+  }
+
+  #presentation > div > h1 {
+    font-size: 2rem;
+  }
+
+  #presentation > div > p {
+    font-size: 1rem;
+  }
+
+  #redes {
+    justify-content: center;
+  }
+
+  #redes > a {
+    font-size: 1rem;
+    padding: 5px 10px 5px 30px;
+  }
+
+  #redes > a > img {
+    width: 18px;
+    height: 18px;
+  }
+
+  #sobre-mi {
+    padding: 1em;
+  }
+
+  #sobre-mi > h1 {
+    font-size: 1.5rem;
+  }
+
+  #sobre-mi > div {
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  #sobre-mi > div > img {
+    max-width: 200px;
+    height: 200px;
+  }
+
+  #texto > p {
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    margin-left: 30%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    height: 1.5em;
+    width: 6em;
+    font-size: 1.2em;
+  }
+
+  h1 > img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .title-section > h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
