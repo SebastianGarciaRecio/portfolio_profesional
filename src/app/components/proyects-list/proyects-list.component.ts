@@ -19,10 +19,10 @@ export class ProyectsListComponent {
       github: 'https://github.com/SebastianGarciaRecio/To-DoList',
       view: 'https://sebastiangarciarecio.github.io/To-DoList/',
       tecnologies: [
-        { nombre: 'Angular', img: 'angular.svg' },
-        { nombre: 'TypeScript', img: 'typescript.svg' },
-        { nombre: 'HTML', img: 'html.svg' },
-        { nombre: 'CSS', img: 'css.svg' }
+        { nombre: 'Angular', img: 'angular.ico' },
+        { nombre: 'TypeScript', img: 'typescript.ico' },
+        { nombre: 'HTML', img: 'html.ico' },
+        { nombre: 'CSS', img: 'css.ico' }
       ]
     },
     {
@@ -32,10 +32,10 @@ export class ProyectsListComponent {
       github: 'https://github.com/SebastianGarciaRecio/library',
       view: 'https://cart-imagin3d.onrender.com',
       tecnologies: [
-        { nombre: 'Angular', img: 'angular.svg' },
-        { nombre: 'TypeScript', img: 'typescript.svg' },
-        { nombre: 'HTML', img: 'html.svg' },
-        { nombre: 'CSS', img: 'css.svg' }
+        { nombre: 'Angular', img: 'angular.ico' },
+        { nombre: 'TypeScript', img: 'typescript.ico' },
+        { nombre: 'HTML', img: 'html.ico' },
+        { nombre: 'CSS', img: 'css.ico' }
       ]
     },
     {
@@ -45,10 +45,10 @@ export class ProyectsListComponent {
       github: 'https://github.com/SebastianGarciaRecio/carrito',
       view: 'https://cart-imagin3d.onrender.com',
       tecnologies: [
-        { nombre: 'NodeJS', img: 'NodeJS.svg' },
-        { nombre: 'TypeScript', img: 'typescript.svg' },
-        { nombre: 'HTML', img: 'html.svg' },
-        { nombre: 'CSS', img: 'css.svg' }
+        { nombre: 'NodeJS', img: 'NodeJS.ico' },
+        { nombre: 'TypeScript', img: 'typescript.ico' },
+        { nombre: 'HTML', img: 'html.ico' },
+        { nombre: 'CSS', img: 'css.ico' }
       ]
     },
     {
@@ -58,10 +58,10 @@ export class ProyectsListComponent {
       github: 'https://github.com/SebastianGarciaRecio/test-Piedras',
       view: 'https://cart-imagin3d.onrender.com',
       tecnologies: [
-        { nombre: 'NodeJS', img: 'NodeJS.svg' },
-        { nombre: 'TypeScript', img: 'typescript.svg' },
-        { nombre: 'HTML', img: 'html.svg' },
-        { nombre: 'CSS', img: 'css.svg' }
+        { nombre: 'NodeJS', img: 'NodeJS.ico' },
+        { nombre: 'TypeScript', img: 'typescript.ico' },
+        { nombre: 'HTML', img: 'html.ico' },
+        { nombre: 'CSS', img: 'css.ico' }
       ]
     },
   ];
