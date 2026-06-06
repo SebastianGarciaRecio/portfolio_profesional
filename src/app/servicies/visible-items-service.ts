@@ -6,7 +6,6 @@ import { Injectable } from '@angular/core';
 export class VisibleItemsService {
 
 
-
   verMasItems(proyectosVisibles: number, cantidad: number): number {
     return proyectosVisibles + cantidad;
   }
@@ -15,6 +14,4 @@ export class VisibleItemsService {
     return cantidad;
 
   }
-
-
 }

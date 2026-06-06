@@ -21,9 +21,11 @@ export class TecnologiesListComponent {
     {nombre: 'MySQL', img: 'mysql.gif' },
     {nombre: 'Python', img: 'python.png'},
     { nombre: 'Git', img: 'git.png' },
-    { nombre: 'GitHub', img: 'github.png' },
+    {nombre: 'PHP', img: 'php.png' },
+    { nombre: 'GitHub', img: 'githubTec.png' },
     {nombre: 'Figma', img: 'FIGMA.avif' },
     {nombre: 'ORACLE', img: 'ORACLE.png' },
+    {nombre: 'WordPress', img: 'wordpress.png' },
     { nombre: 'Visual Studio Code', img: 'VSCODE.png' },
     
   ];

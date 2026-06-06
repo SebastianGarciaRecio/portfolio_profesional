@@ -19,8 +19,9 @@ export class ProyectsListComponent {
       github: 'https://github.com/SebastianGarciaRecio/To-DoList',
       view: 'https://sebastiangarciarecio.github.io/To-DoList/',
       tecnologies: [
-        { nombre: 'Angular', img: 'angular.ico' },
+        { nombre: 'NodeJS', img: 'NodeJS.ico' },
         { nombre: 'TypeScript', img: 'typescript.ico' },
+        {nombre: 'javascript', img: 'javascript.ico'},
         { nombre: 'HTML', img: 'html.ico' },
         { nombre: 'CSS', img: 'css.ico' }
       ]
@@ -32,8 +33,9 @@ export class ProyectsListComponent {
       github: 'https://github.com/SebastianGarciaRecio/library',
       view: 'https://cart-imagin3d.onrender.com',
       tecnologies: [
-        { nombre: 'Angular', img: 'angular.ico' },
+        { nombre: 'NodeJS', img: 'NodeJS.ico' },
         { nombre: 'TypeScript', img: 'typescript.ico' },
+        {nombre: 'javascript', img: 'javascript.ico'},
         { nombre: 'HTML', img: 'html.ico' },
         { nombre: 'CSS', img: 'css.ico' }
       ]
@@ -46,6 +48,7 @@ export class ProyectsListComponent {
       view: 'https://cart-imagin3d.onrender.com',
       tecnologies: [
         { nombre: 'NodeJS', img: 'NodeJS.ico' },
+        {nombre: 'javascript', img: 'javascript.ico'},
         { nombre: 'TypeScript', img: 'typescript.ico' },
         { nombre: 'HTML', img: 'html.ico' },
         { nombre: 'CSS', img: 'css.ico' }
@@ -53,13 +56,12 @@ export class ProyectsListComponent {
     },
     {
       img: 'proyecto4.png',
-      title: 'Carrito de compra',
-      description: 'Plataforma web que permite a los usuarios agregar y visualizar productos de manera intuitiva',
+      title: 'Test piedras',
+      description: 'Test de entretinmiento en donde en base a tu personalidad puedes descubrir que piedra preciosa eres',
       github: 'https://github.com/SebastianGarciaRecio/test-Piedras',
-      view: 'https://cart-imagin3d.onrender.com',
+      view: '',
       tecnologies: [
-        { nombre: 'NodeJS', img: 'NodeJS.ico' },
-        { nombre: 'TypeScript', img: 'typescript.ico' },
+        {nombre: 'javascript', img: 'javascript.ico'},
         { nombre: 'HTML', img: 'html.ico' },
         { nombre: 'CSS', img: 'css.ico' }
       ]

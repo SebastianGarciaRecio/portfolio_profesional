@@ -7,11 +7,17 @@
             <div class="card-body">
                 <h5 class="card-title">{{ proyecto.title }}</h5>
                 <p class="card-text">{{ proyecto.description }}</p>
-                <a [href]="proyecto.view" target="_blank"><img src="enlace.png" alt="View"> <img src="enlace_black.png" alt="View">View</a>
-                <a [href]="proyecto.github" target="_blank"><img src="github.png" alt="Github"> <img src="github_black.png" alt="Github">Github</a>
+                @if(proyecto.view != ''){
+                    <a [href]="proyecto.view" target="_blank"><img src="enlace.png" alt="View"> <img src="enlace_black.png" alt="View">View</a>
+                }
+
+                @if(proyecto.view != ''){
+                    <a [href]="proyecto.github" target="_blank"><img src="github.png" alt="Github"> <img src="github_black.png" alt="Github">Github</a>
+                }
+                
                 <div class="tecnologiasProyecto">
                     @for(tecnologia of proyecto.tecnologies; track $index){
-                    <div><img [src]="tecnologia.img">{{ tecnologia.nombre }}</div>
+                    <div><img [src]="tecnologia.img" class="tecnologia-img"> {{ tecnologia.nombre }}</div>
                     }
                 </div>
             </div>

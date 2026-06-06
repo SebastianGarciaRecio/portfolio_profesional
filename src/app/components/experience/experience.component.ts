@@ -14,13 +14,13 @@ export class ExperienceComponent {
       rol: 'Desarrollador Web Voluntario',
       empresa: 'Asociación Huella de Carbonoo',
       fechaInicio: 'Marzo 2026 - Actualidad',
-      descripcion: 'Desarrollo de un sitio web para la asociación utilizando WordPress. Gestión de contenido y mantenimiento del sitio.'
+      descripcion: 'Desarrollo de plataformas web para el seguimiento y análisis de la huella de carbono, orientadas a la visualización de datos ambientales para la toma de decisiones. Diseño de interfaces en Figma e implementación en Angular y TypeScript con una arquitectura modular basada en componentes. Implementación de interfaces responsive con Bootstrap, consumo de APIs REST, creación de dashboards interactivos y aplicación de buenas prácticas de desarrollo para garantizar escalabilidad, rendimiento y mantenibilidad.'
     },
     {
       rol: 'Desarrollador Web Voluntario',
       empresa: 'CIAMI (centro Integral de atencion al migrante) Valladolid',
       fechaInicio: 'Febrero 2026 - Actualidad',
-      descripcion: 'Creación de interfaces con HTML, CSS, JavaScript y React.Optimización de rendimiento y accesibilidad.'
+      descripcion: 'Desarrollo de soluciones web para la ONG, incluyendo una aplicación de gestión administrativa para la centralización de datos de solicitantes inmigrantes, implementada con WordPress, PHP, SQL y phpMyAdmin.Implementación de funcionalidades personalizadas mediante shortcodes y gestión del despliegue y mantenimiento del sistema utilizando Plesk. Desarrollo de una plataforma web de búsqueda de empleo para la inserción laboral de personas inmigrantes, implementada con React y TypeScript, basada en una arquitectura modular y consumo de APIs.'
     },
     {
       rol: 'Desarrollador web en practicas',

@@ -1,22 +1,31 @@
-<div class="header-wrapper">
-
+﻿<div class="header-wrapper" [class.menu-open]="isMenuOpen">
 
     <div class="header-content">
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" (click)="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
         <header class="nav-header">
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link">Perfil</a></li>
-                <li class="nav-item"><a href="#experiencia" class="nav-link">Experiencia</a></li>
-                <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
-                <li class="nav-item"><a href="#tecnologias" class="nav-link">Tecnologías</a></li>
-                <li class="nav-item"><a href="#educacion" class="nav-link">Educación</a></li>
-                <li class="nav-item"><a href="#sobreMi" class="nav-link">Sobre mí</a></li>
-                <!--<li class="nav-item"><a href="#" class="nav-link"><img id="change-theme"
-                                src="assets/img/theme.png" alt="Cambiar tema" width="20" height="20"></a></li> -->
-            </ul>
+            <nav class="nav-wrapper">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#" class="nav-link" (click)="closeMenu()">Perfil</a></li>
+                    <li class="nav-item"><a href="#experiencia" class="nav-link" (click)="closeMenu()">Experiencia</a></li>
+                    <li class="nav-item"><a href="#proyectos" class="nav-link" (click)="closeMenu()">Proyectos</a></li>
+                    <li class="nav-item"><a href="#tecnologias" class="nav-link" (click)="closeMenu()">Tecnologías</a></li>
+                    <li class="nav-item"><a href="#educacion" class="nav-link" (click)="closeMenu()">Educación</a></li>
+                    <li class="nav-item"><a href="#sobreMi" class="nav-link" (click)="closeMenu()">Sobre mí</a></li>
+                    <!--<li class="nav-item"><a href="#" class="nav-link"><img id="change-theme"
+                                    src="assets/img/theme.png" alt="Cambiar tema" width="20" height="20"></a></li> -->
+                </ul>
+            </nav>
         </header>
     </div>
 
     <div class="scroll-bar">
         <div class="scroll-bar__fill" [style.width.%]="scrollPercent"></div>
     </div>
+
+    <div class="menu-backdrop" *ngIf="isMenuOpen" (click)="closeMenu()"></div>
 </div>
