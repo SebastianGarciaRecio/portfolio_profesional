@@ -7,6 +7,7 @@
             <div class="card-body">
                 <h5 class="card-title">{{ proyecto.title }}</h5>
                 <p class="card-text">{{ proyecto.description }}</p>
+                
                 @if(proyecto.view != ''){
                     <a [href]="proyecto.view" target="_blank"><img src="enlace.png" alt="View"> <img src="enlace_black.png" alt="View">View</a>
                 }

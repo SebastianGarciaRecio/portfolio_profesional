@@ -26,6 +26,7 @@ export class TecnologiesListComponent {
     {nombre: 'Figma', img: 'FIGMA.avif' },
     {nombre: 'ORACLE', img: 'ORACLE.png' },
     {nombre: 'WordPress', img: 'wordpress.png' },
+    {nombre: 'Docker', img: 'docker.png' },
     { nombre: 'Visual Studio Code', img: 'VSCODE.png' },
     
   ];
