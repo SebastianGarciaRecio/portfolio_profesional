@@ -19,7 +19,7 @@ export class ProyectsListComponent {
       github: 'https://github.com/SebastianGarciaRecio/Drifcloud',
       view: 'https://cloud-frontend-delta.vercel.app/',
       tecnologies: [
-        {nombre: 'Vue.js', img: 'VueJS.ico'}
+        {nombre: 'Vue.js', img: 'VueJS.ico'},
         { nombre: 'NodeJS', img: 'NodeJS.ico' },
         { nombre: 'TypeScript', img: 'typescript.ico' },
         {nombre: 'javascript', img: 'javascript.ico'},
