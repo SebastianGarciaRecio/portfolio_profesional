@@ -9,6 +9,7 @@ import { VisibleItemsService } from '../../servicies/visible-items-service';
 })
 export class TecnologiesListComponent {
   tecnologias: Tecnologia[] = [
+    {nombre: 'Vue.JS', img:'VUE.webp'},
     { nombre: 'Angular', img: 'Angular.png' },
     { nombre: 'TypeScript', img: 'Typescript.png' },
     { nombre: 'JavaScript', img: 'javascript.png' },
