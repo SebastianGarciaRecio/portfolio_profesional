@@ -12,6 +12,21 @@ import { VisibleItemsService } from '../../servicies/visible-items-service';
 })
 export class ProyectsListComponent {
   proyectos: Proyecto[] = [
+        {
+      img: 'proyectoCloud.png',
+      title: 'Driflocud',
+      description: 'Drifcloud es una aplicación web de almacenamiento en la nube que permite subir, organizar, editar y compartir archivos y carpetas de forma sencilla y segura',
+      github: 'https://github.com/SebastianGarciaRecio/Drifcloud',
+      view: 'https://cloud-frontend-delta.vercel.app/',
+      tecnologies: [
+        {nombre: 'Vue.js', img: 'VueJS.ico'}
+        { nombre: 'NodeJS', img: 'NodeJS.ico' },
+        { nombre: 'TypeScript', img: 'typescript.ico' },
+        {nombre: 'javascript', img: 'javascript.ico'},
+        { nombre: 'HTML', img: 'html.ico' },
+        { nombre: 'CSS', img: 'css.ico' }
+      ]
+    },
     {
       img: 'proyecto1.png',
       title: 'Lista de Tareas',
